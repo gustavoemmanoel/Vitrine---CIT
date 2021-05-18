@@ -1,0 +1,196 @@
+body { margin: 0;padding: 0; box-sizing: border-box;background-size:100%;background-repeat: no-repeat; background-attachment: fixed; font-family: Rubik;}
+a{text-decoration: none;}
+li{font-size: 15px;}
+p{color: black ;}
+strong{font-size: 30px; font-family: Rubik-Bold;}
+@font-face{
+    font-family:"Rubik";
+    src: url(font/Rubik-Regular.ttf);
+}
+@font-face{
+    font-family:"Rubik-Bold";
+    src: url(font/Rubik-Bold.ttf);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 7fr;
+    grid-gap: 10px;
+    color: red;
+    grid-template-areas: 
+        "header header "
+        "aside main "
+        "footer footer ";
+}
+.banner{
+    background: url('componentes/banner.jpg') no-repeat;
+    background-size: cover;
+    left: 25%;
+    width: 100%;
+    height: 500px;
+    margin-left: 0px;
+    }
+.banner1{
+    background: url('componentes/menu.jpg') no-repeat;
+    background-size: cover;
+    position: fixed;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height:142px;
+    }
+}
+.text{
+    display: block;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    margin-top: 10px;
+}
+.conteudo{
+    display: block;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.header{
+    color: red;
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+                    "logo nav--right"
+                    "logo search"
+                    "nav nav" ;
+    grid-gap: 10px;
+    padding: 0 50px;
+}
+.search {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 7px;
+    font-size: 18px;
+}
+button{
+    vertical-align: middle;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+}
+.barradepesquisa{
+    margin-left: 100px;
+    margin-top: 60px;
+    width: 500px;
+    height: 30px;
+}
+    
+.layout{
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 80px;
+}
+    nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr);
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+    nav a{
+        justify-content: space-between;
+        padding-right: 100px;
+        text-align: center;
+        font-size: 24px;
+        color: black;
+}
+.lista{
+        display: grid;
+        margin-left: 75px;
+        margin-top: 75px;
+        justify-items: space-between;
+}
+.lista p{
+}
+.lista1 {
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.213);
+        border-color: rgb(213, 213, 213);
+        display: inline-block;
+        margin-top: -5px;
+        width: 910px;
+        height: 190px;
+}
+.lista1 img{
+        vertical-align: auto;
+        padding-right: 20px;
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+}
+aside{
+    grid-area: aside;
+    padding-top:20px;
+    height: 640px;
+}
+
+.filtro{
+    margin-top: -20px;
+    height: 1000px;
+    width: 250px;
+    padding-top:0px;
+    margin-left: 50px;
+    
+}
+.titulo{
+    color: rgb(60, 60, 60);
+    font-size: 13px;
+    margin-left: 45px;
+}
+.filtros{
+    color: rgb(107, 107, 107);
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 50px;
+    font-size: 13px;
+}
+.rodape{
+    background-size: cover;
+    display: flex;
+    flex-flow: row;
+    background-repeat: no-repeat;
+    display: block;
+    background-image:url(componentes/rodape.jpg);
+    width: 100%;
+    height: 800px;
+}
+.passar{
+    display: inline-flex;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: rgb(220, 220, 220);
+    border-width: 1px;
+    align-items: center;
+    margin-left: 5px;
+}
+.passar1{
+    font-size: 35px;
+}
+.quadra{
+    background-color: ;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    vertical-align: auto;
+    margin-left: 500px;
+    margin-top: 75px;
+    margin-bottom: 120px ;
+    width: 500px;
+    height: 35px;
+}
